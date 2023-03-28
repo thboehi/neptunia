@@ -6,7 +6,7 @@ Website developed in team at the SAE
 
 https://thboehi.github.io/neptunia/
 
-## Crédits
+## Credits
 - Chadi Chammout
 - Eric Tourvieille
 - Maxime Morel
