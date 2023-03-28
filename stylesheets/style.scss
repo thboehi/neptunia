@@ -30,6 +30,7 @@
     --main-font: basic-sans, sans-serif;
     //--main-font: "Baskerville";
     --max-width: 1500px
+    touch-action: manipulation;
 }
 
 html {
@@ -45,9 +46,7 @@ a {
     text-decoration: none;
     transition: transform 300ms ease-in-out;
 }
-a:hover{
-    transform: scale(0.95) rotate(-2deg);
-}
+
 
 button {
     background: unset;
@@ -57,7 +56,9 @@ button {
 
 
 
-// GENERAL
+/* -------------------------------------------------------------------------- */
+/*                                   GENERAL                                  */
+/* -------------------------------------------------------------------------- */
 body {
     background-color: #1D1D1D;
     color: #ffffff;
@@ -99,7 +100,13 @@ img {
     }
 }
 
-//Header (Thoma)
+a:hover{
+    transform: scale(0.95) rotate(-2deg);
+}
+
+/* -------------------------------------------------------------------------- */
+/*                               Header (Thoma)                               */
+/* -------------------------------------------------------------------------- */
 .header-main-container {
     pointer-events: none;
     user-select: none;
@@ -155,14 +162,14 @@ $colorBg: #1D1D1D;
 $colorOutline: #ffffff;
 $colorOutlineFade: #4e5559;
 
-$widthMouse: 40px;
-$heightMouse: 76px;
-$borderMouse: 6px;
+$widthMouse: 20px;
+$heightMouse: 38px;
+$borderMouse: 4px;
 
 $posMouse: 8px;
 
 $sizeTrackball: 6px;
-$posTrackball: 20px;
+$posTrackball: 10px;
 $shrinkTrackball: 0.4;
 
 $animDuration: 5s;
@@ -215,7 +222,9 @@ $animDuration: 5s;
         }
 }
 
-//Navbar (Kevin)
+/* -------------------------------------------------------------------------- */
+/*                               Navbar (Kevin)                               */
+/* -------------------------------------------------------------------------- */
 .navigation {
 	display: flex;
 	width: 100%;
@@ -246,7 +255,7 @@ $animDuration: 5s;
 	background-color: rgba($color: #1D1D1D, $alpha: 1);
 }
 
-//A propos
+/* -------------------------------- A propos -------------------------------- */
 .about {
 	margin: 60px 0;
 	padding: 30px;
@@ -272,7 +281,9 @@ $animDuration: 5s;
 	line-height: 1.6;
 }
 
-//Lineup (Corentin)
+/* -------------------------------------------------------------------------- */
+/*                              Lineup (Corentin)                             */
+/* -------------------------------------------------------------------------- */
 .lineup {
     display: flex;
     flex-direction: column;
@@ -333,7 +344,6 @@ $animDuration: 5s;
 .footer-box {
     margin: 20px 0;
     width: 100%;
-    padding: 0 35px 0 50px;
 }
 
 footer h2{
@@ -344,7 +354,8 @@ footer h2{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 60px;
+    max-width: 1000px;
+    margin: 0 auto 60px auto;
 }
 
 .partners a{
@@ -390,7 +401,9 @@ footer h2{
     margin-left: 20px;
 }
 
-// maxime
+/* -------------------------------------------------------------------------- */
+/*                          Artist Caroussel (maxime)                         */
+/* -------------------------------------------------------------------------- */
 .artists-caroussel {
     height: 100vh; // fallback
     height: 100dvh; // better for mobile when supported (merci jtm maxime)
@@ -466,30 +479,32 @@ footer h2{
     }
 }
 
+/* -------------------------- Self credit (maxime) -------------------------- */
 .credits {
-    font-size: 1.2rem;
-    line-height: 1.8;
-    margin-bottom: 60px;
+    width: 97%;
+    max-width: 1000px;
+    margin: 60px auto;
     text-align: center;
-    margin-left: 10%;
-    width: 80%;
+    font-size: 1.2rem;
+    font-weight: bold;
     overflow: hidden;
     .names {
-        height: 1em;
-        width: 120em;
-        margin: auto 0;
-        margin: 0.5em 0;
+        display: flex;
         flex: 1;
-        gap: 5em;
+        gap: 3em;
+        width: max-content;
+        margin: 1em 0 0 0;
+        font-weight: 400;
         > * {
-            margin: 0.5em;
+            margin: 0.5em 0;
             height: 1em;
-            width: 15em;
         }
     }
 }
 
-// DESKTOP
+/* -------------------------------------------------------------------------- */
+/*                                   DESKTOP                                  */
+/* -------------------------------------------------------------------------- */
 @media screen and (min-width: 768px) {
     .h1 {
         p {
@@ -507,14 +522,18 @@ footer h2{
         transform: perspective(2000px);
         transform: translateZ(0px);
     }
+    $widthMouse: 40px;
+    $heightMouse: 76px;
+    $borderMouse: 6px;
+    $sizeTrackball: 6px;
 	
-		//A propos
+	//A propos
 	.about{
 		margin: 60px 60px;
 		padding: 60px;
 		text-align: justify;
 	}
-	
+	/* ------------------------ Artist Caroussel (maxime) ----------------------- */
     .artists-caroussel {
         height: 85vh;
         .content {
