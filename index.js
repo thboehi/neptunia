@@ -72,25 +72,25 @@ const artistSlides = [
     {
         img: "img/artists-slider/theos.png",
         title: "Theos",
-        text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae, labore quisquam? Dolorem ipsam soluta voluptatem reiciendis animi quisquam error perspiciatis veniam, dignissimos delectus minima quia voluptates saepe eos maxime repellat?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae, labore quisquam? Dolorem ipsam soluta voluptatem reiciendis animi quisquam error perspiciatis veniam, dignissimos delectus minima quia voluptates saepe eos maxime repellat?",
+        text: "Nous n'avons pas encore toutes les informations concernant Theos, cet artiste mystérieux. Restez attentif et découvrez qui il est très prochainement !",
         soundCloud: "https://soundcloud.com"
     },
     {
         img: "img/artists-slider/drnovelove.png",
         title: "Dr. Novelove",
-        text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae, labore quisquam? Dolorem ipsam soluta voluptatem reiciendis animi quisquam error perspiciatis veniam, dignissimos delectus minima quia voluptates saepe eos maxime repellat?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae, labore quisquam? Dolorem ipsam soluta voluptatem reiciendis animi quisquam error perspiciatis veniam, dignissimos delectus minima quia voluptates saepe eos maxime repellat?",
+        text: "Nous n'avons pas encore toutes les informations concernant Dr. Novelove, cet artiste mystérieux. Restez attentif et découvrez qui il est très prochainement !",
         soundCloud: "https://soundcloud.com/quentin-novello/reposts"
     },
     {
         img: "img/artists-slider/midivido.png",
         title: "Midi & Vido",
-        text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae, labore quisquam? Dolorem ipsam soluta voluptatem reiciendis animi quisquam error perspiciatis veniam, dignissimos delectus minima quia voluptates saepe eos maxime repellat?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae, labore quisquam? Dolorem ipsam soluta voluptatem reiciendis animi quisquam error perspiciatis veniam, dignissimos delectus minima quia voluptates saepe eos maxime repellat?",
+        text: "Nous n'avons pas encore toutes les informations concernant Midi & Vido, ce groupe mystérieux. Restez attentif et découvrez qui il est très prochainement !",
         soundCloud: "https://soundcloud.com/clubkatel"
     },
     {
         img: "img/artists-slider/cesar.png",
         title: "César Alïli",
-        text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae, labore quisquam? Dolorem ipsam soluta voluptatem reiciendis animi quisquam error perspiciatis veniam, dignissimos delectus minima quia voluptates saepe eos maxime repellat?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae, labore quisquam? Dolorem ipsam soluta voluptatem reiciendis animi quisquam error perspiciatis veniam, dignissimos delectus minima quia voluptates saepe eos maxime repellat?",
+        text: "Nous n'avons pas encore toutes les informations concernant César Alïli, cet artiste mystérieux. Restez attentif et découvrez qui il est très prochainement !",
         soundCloud: "https://soundcloud.com"
     },
 ];
