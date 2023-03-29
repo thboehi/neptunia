@@ -8,12 +8,12 @@ function addOrRemoveStickyClass()
 {
     if (window.scrollY >= stickposition) 
     {
-        navigation.classList.add("sticky");
+        navigation.setAttribute("data-state", "visible");
     }
 
-    else 
+    else
     {
-        navigation.classList.remove("sticky");
+        navigation.setAttribute("data-state", "hidden");
     }
 }
 
@@ -111,7 +111,7 @@ const artistSlides = [
         img: "img/artists-slider/theos.png",
         title: "Theos",
         text: "Nous n'avons pas encore toutes les informations concernant Theos, cet artiste mystérieux. Restez attentif et découvrez qui il est très prochainement !",
-        soundCloud: "https://soundcloud.com"
+        soundCloud: "https://soundcloud.com/theostheos"
     },
     {
         img: "img/artists-slider/drnovelove.png",

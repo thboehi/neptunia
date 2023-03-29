@@ -242,11 +242,17 @@ $animDuration: 5s;
 
 .navigation {
 
-	display: none;
+    display: flex;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1000;
+	background-color: rgba($color: #1D1D1D, $alpha: 1);
+    opacity: 0;
 	width: 100%;
 	justify-content: center;
 	padding: 20px 0;
-
+    transition: opacity 300ms ease-out;
 	ul 
 	{
 		width: 100%;
@@ -266,11 +272,12 @@ $animDuration: 5s;
     {
         .billetterie-btn 
         {
-            padding: 5px 10px;
-            background-color: white;
-            color: #1D1D1D;
+            padding: 10px 20px;
+            background-color: none;
+            border: white solid 2px;
+            color: white;
             cursor: pointer;
-            transition: color 100ms ease;
+            transition: color 300ms ease-out, background-color 300ms ease-out;
         }
 
         .billetterie-btn:hover 
@@ -283,31 +290,10 @@ $animDuration: 5s;
 
 }
 
-.sticky 
+.navigation[data-state="visible"]
 {
-    display: flex;
-	position: fixed;
-	top: 0;
-	left: 0;
-	z-index: 1000;
-	background-color: rgba($color: #1D1D1D, $alpha: 1);
-    animation-name: fade;
-    animation-duration: 500ms;
-    animation-timing-function: ease-in;
-    animation-fill-mode: forwards;
-}
-
-@keyframes fade 
-{
-    0% 
-    {
-        opacity: 0;
-    }
-
-    100% 
-    {
-        opacity: 1;
-    }
+    transition: opacity 300ms ease-out;
+    opacity: 1;
 }
 
 /* -------------------------------- A propos -------------------------------- */
@@ -333,7 +319,23 @@ $animDuration: 5s;
 }
 
 .lieu{
-	line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 35px;
+}
+
+
+.tarif{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 35px 0 60px 0;
+    line-height: 2;
+}
+
+.p{
+    margin:5px 0;
 }
 
 /* -------------------------------------------------------------------------- */
@@ -654,6 +656,21 @@ footer h2{
             margin-right: 2vw;
             position: absolute;
             right: 0;
+            top: 0;
+            transform: translatey(50%);
+            
+
+            .billetterie-btn 
+            {
+                float: right;
+                transition: transform 200ms ease-in;
+            }
+
+            .billetterie-btn:hover
+            {
+                transform: scale(1.1);
+
+            }
         }
 	}
 
