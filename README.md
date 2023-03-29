@@ -7,10 +7,10 @@ Website developed in team at the SAE
 https://thboehi.github.io/neptunia/
 
 ## Credits
-- Chadi Chammout
-- Eric Tourvieille
-- Maxime Morel
-- Kevin Da Costa
-- Corentin Jenni 
-- Julie Rebetez
-- Thomas Boehi
+- [Chadi Chammout](#)
+- [Eric Tourvieille](https://github.com/ElioTourvieille)
+- [Maxime Morel](https://maxime-morel.xyz)
+- [Kevin Da Costa](#)
+- [Corentin Jenni ](#)
+- [Julie Rebetez](#)
+- [Thomas Boehi](https://thbo.ch/)

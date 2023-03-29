@@ -1,22 +1,12 @@
 // PARTIE KEVIN
+const header = document.querySelector(".header-main-container");
+
 const navigation = document.querySelector(".navigation");
-const stickposition = navigation.offsetTop - 3;
-
-const about = document.getElementById("scrollabout");
-const programme = document.getElementById("#programme");
-const artiste = document.getElementById("#artiste");
-
-// arrayNav.forEach(e => {
-//     e.addEventListener("click", e => {
-//         console.log("scrolltop")
-//         document.scrollTo(0, e.offsetTop + 30);
-//     })
-// })
-
+const stickposition = 50;
 
 function addOrRemoveStickyClass() 
 {
-    if (window.pageYOffset >= stickposition) 
+    if (window.scrollY >= stickposition) 
     {
         navigation.classList.add("sticky");
     }

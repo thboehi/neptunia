@@ -99,6 +99,20 @@ a:hover {
   transform: scale(0.95) rotate(-2deg);
 }
 
+.visually-hidden { /* for all element that need to be present in dom but invisible for accessibility */
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  -webkit-clip-path: inset(50%);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  margin: -1px;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  white-space: nowrap;
+}
+
 /* -------------------------------------------------------------------------- */
 /*                               Header (Thoma)                               */
 /* -------------------------------------------------------------------------- */
@@ -199,31 +213,55 @@ a:hover {
 /*                               Navbar (Kevin)                               */
 /* -------------------------------------------------------------------------- */
 .navigation {
-  display: flex;
+  display: none;
   width: 100%;
   justify-content: center;
   padding: 20px 0;
 }
 .navigation ul {
   width: 100%;
-  display: flex;
+  display: none;
   justify-content: center;
 }
 .navigation ul li {
   font-family: var(--main-font);
   margin: 0 10px;
-  font-size: 1rem;
+  font-size: 2vw;
   color: white;
+}
+.navigation .billetterie-btn-container .billetterie-btn {
+  padding: 5px 10px;
+  background-color: white;
+  color: #1D1D1D;
+  cursor: pointer;
+  transition: color 100ms ease;
+}
+.navigation .billetterie-btn-container .billetterie-btn:hover {
+  color: #1D1D1D;
+  background-color: white;
 }
 
 .sticky {
+  display: flex;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 1000;
   background-color: #1d1d1d;
+  animation-name: fade;
+  animation-duration: 500ms;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
 }
 
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 /* -------------------------------- A propos -------------------------------- */
 .about {
   margin: 60px 0;
@@ -514,8 +552,12 @@ footer h2 {
   .artists-caroussel .content.active img {
     max-height: 80vh;
   }
+  /* Navbar (KEVIN) */
   .navigation {
     padding: 30px 0;
+  }
+  .navigation ul {
+    display: flex;
   }
   .navigation ul li {
     font-size: 1rem;
@@ -533,6 +575,11 @@ footer h2 {
   }
   .navigation ul:hover li:not(:hover) {
     opacity: 0.5;
+  }
+  .navigation .billetterie-btn-container {
+    margin-right: 2vw;
+    position: absolute;
+    right: 0;
   }
   .social {
     display: flex;

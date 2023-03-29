@@ -3,7 +3,7 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
-<html lang="xyz">
+<html lang="fr">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,7 +13,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
         <link rel="stylesheet" href="https://use.typekit.net/zuy5myn.css">
         <link rel="stylesheet" href="./stylesheets/style.css">
-        <link rel="icon" type="image/x-icon" href="./img/5.png">
+        <link rel="icon" type="image/x-icon" href="./img/5.webp">
 
         <!-- Socials -->
         <meta content="Neptunia" property="og:title">
@@ -30,7 +30,7 @@
                     <p>Neptune’s</p>
                     <p>Nightclub</p>
                 </h1>
-                <img src="./img/1.png" alt="Logo" class="header-image">
+                <img src="./img/1.webp" alt="Logo" class="header-image">
             </div>
             <div class="mouse"></div>
         </header>
@@ -41,6 +41,11 @@
                 <li><a href="#programme" id="scrollprogramm">Programme</a></li>
                 <li><a href="#partenaires">Partenaires</a></li>
             </ul>
+
+            <div class="billetterie-btn-container">
+                <a href="" target="_blank" class="billetterie-btn">Billetterie</a>
+            </div>
+            
         </nav>
         <section class="about" id="about">
             <h2 class="h2">A propos</h2>
@@ -61,7 +66,7 @@
         <section class="artists-caroussel" id="artiste">
             <div class="content active">
                     <div class="image">
-                        <img src="img/artists-slider/herrkrank.png" alt="Image de l'artiste Herr Krank">
+                        <img src="img/artists-slider/herrkrank.webp" alt="Image de l'artiste Herr Krank">
                     </div>
                     <h2 class="h2">Herr Krank</h2>
                     <p>
@@ -73,7 +78,7 @@
             </div>
             <div class="content hidden">
                     <div class="image">
-                        <img src="img/artists-slider/theos.png" alt="Image de l'artiste Theos">
+                        <img src="img/artists-slider/theos.webp" alt="Image de l'artiste Theos">
                     </div>
                     <h2 class="h2">Theos</h2>
                     <p>
@@ -85,7 +90,7 @@
             </div>
             <div class="content hidden">
                     <div class="image">
-                        <img src="img/artists-slider/drnovelove.png" alt="Image de l'artiste Dr. Novelove">
+                        <img src="img/artists-slider/drnovelove.webp" alt="Image de l'artiste Dr. Novelove">
                     </div>
                     <h2 class="h2">Dr. Novelove</h2>
                     <p>
@@ -97,7 +102,7 @@
             </div>
             <div class="content hidden">
                     <div class="image">
-                        <img src="img/artists-slider/midivido.png" alt="Image de l'artiste Midi & Vido">
+                        <img src="img/artists-slider/midivido.webp" alt="Image de l'artiste Midi & Vido">
                     </div>
                     <h2 class="h2">Midi & Vido</h2>
                     <p>
@@ -109,7 +114,7 @@
             </div>
             <div class="content hidden">
                     <div class="image">
-                        <img src="img/artists-slider/cesar.png" alt="Image de l'artiste César Alïli">
+                        <img src="img/artists-slider/cesar.webp" alt="Image de l'artiste César Alïli">
                     </div>
                     <h2 class="h2">César Alïli</h2>
                     <p>
@@ -120,12 +125,24 @@
                     </div>
             </div>
             <div class="nav">
-                <button onclick="changeSlide(-1)"><i class="fa-solid fa-chevron-left"></i></button>
+                <button onclick="changeSlide(-1)">
+                    <i class="fa-solid fa-chevron-left"></i>
+                    <span class="visually-hidden">Artiste précédent</span>
+                </button>
                 <span class="auto" data-state="pause">
-                    <button id="play" onclick="play()"><i class="fa-solid fa-play"></i></button>
-                    <button id="pause" onclick="pause()"><i class="fa-solid fa-pause"></i></button>
+                    <button id="play" onclick="play()">
+                        <i class="fa-solid fa-play"></i>
+                        <span class="visually-hidden">Activer défilement automatique</span>
+                    </button>
+                    <button id="pause" onclick="pause()">
+                        <i class="fa-solid fa-pause"></i>
+                        <span class="visually-hidden">Stoper défilement automatique</span>
+                    </button>
                 </span>
-                <button onclick="changeSlide(1)"><i class="fa-solid fa-chevron-right"></i></button>
+                <button onclick="changeSlide(1)">
+                    <i class="fa-solid fa-chevron-right"></i>
+                    <span class="visually-hidden">Artiste suivant</span>
+                </button>
             </div>
         </section>
         <section class="lineup" id="programme">
@@ -158,11 +175,11 @@
             <h2 class="h2">Partenaires</h2>
             <div class="partners">
                 <a href="https://geneva.sae.edu" target="_blank">
-                    <img src="img/6.png" alt="Logo de la SAE"></a>
+                    <img src="img/6.webp" alt="Logo de la SAE"></a>
                 <a href="https://captainemousse.ch/" target="_blank">
-                    <img src="img/7.png" alt="Logo de Captaine Mousse"></a>
+                    <img src="img/7.webp" alt="Logo de Captaine Mousse"></a>
                 <a href="https://www.eltonymate.com/fr/" target="_blank">
-                    <img src="img/8.png" alt="Logo de Tony"></a>
+                    <img src="img/8.webp" alt="Logo de Tony"></a>
                 <a href="https://icebergues.ch/" target="_blank">
                     <img id=place src="img/icewhite.svg" alt="Logo de l'Icebergues"></a>
             </div>
@@ -173,7 +190,7 @@
                     <p>-</p>
                     <a href="https://thbo.ch/" target="_blank" rel="noopener noreferrer">Thomas Boehi</a>
                     <p>-</p>
-                    <a href="#">Eric Tourvieille</a>
+                    <a href="https://github.com/ElioTourvieille" target="_blank">Eric Tourvieille</a>
                     <p>-</p>
                     <a href="https://maxime-morel.xyz" target="_blank">Maxime Morel</a>
                     <p>-</p>
@@ -187,9 +204,18 @@
             </div>
             <div class="social">
                 <div class="media">
-                    <a href="https://www.instagram.com/neptunes_nightclub/" target="_blank"><i class="fa-brands fa-instagram"></i></i></a>
-                    <a href="https://www.tiktok.com/@neptunes_nightclub?_t=8ayOSNvYlNN&_r=1" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
-                    <a href="https://www.facebook.com/profile.php?id=100091423141788" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/neptunes_nightclub/" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                        <span class="visually-hidden">Instagram</span>
+                    </a>
+                    <a href="https://www.tiktok.com/@neptunes_nightclub?_t=8ayOSNvYlNN&_r=1" target="_blank">
+                        <i class="fa-brands fa-tiktok"></i>
+                        <span class="visually-hidden">TikTok</span>
+                    </a>
+                    <a href="https://www.facebook.com/profile.php?id=100091423141788" target="_blank">
+                        <i class="fa-brands fa-facebook"></i>
+                        <span class="visually-hidden">Facebook</span>
+                    </a>
                 </div>
                 <p>Tous droits réservés @ Neptunia 2023</p>
             </div>
