@@ -92,7 +92,7 @@ img {
 	cursor: pointer;
     transition: background-color 300ms ease-in-out, color 300ms ease-in-out, transform 300ms ease-in-out;
     &:hover {
-        transform: scale(1.1);
+        transform: scale(0.95);
         transform: rotate(-2deg);
         background-color: white;
         color: #1D1D1D;
@@ -668,7 +668,7 @@ footer h2{
 
             .billetterie-btn:hover
             {
-                transform: scale(1.1);
+                transform: rotate(-2deg) scale(0.95);
 
             }
         }
