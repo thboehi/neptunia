@@ -120,7 +120,7 @@ function displayArtist(i) {
     artistsElems.img.alt = `Image de l'artiste ${artistSlides[i].title}`
     artistsElems.title.innerHTML = artistSlides[i].title;
     artistsElems.text.innerHTML = artistSlides[i].text;
-    artistsElems.social.href = artistSlides.soundCloud;
+    artistsElems.social.href = artistSlides[i].soundCloud;
 }
 
 
