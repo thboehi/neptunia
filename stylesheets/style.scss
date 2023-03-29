@@ -29,7 +29,6 @@
     appearance: none;
     --main-font: basic-sans, sans-serif;
     //--main-font: "Baskerville";
-    --max-width: 1500px
     touch-action: manipulation;
 }
 
@@ -63,7 +62,7 @@ body {
     background-color: #1D1D1D;
     color: #ffffff;
     font-family: var(--main-font);
-    max-width: var(--max-width);
+    max-width: 1000px;
     margin: 0 auto;
 }
 
