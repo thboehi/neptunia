@@ -318,10 +318,11 @@ footer h2 {
 
 .partners {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   max-width: 1000px;
   margin: 0 auto 60px auto;
+  padding: 20px;
 }
 
 .partners a {
@@ -330,8 +331,9 @@ footer h2 {
   margin-left: 10px;
 }
 
-.partners img {
-  width: 90%;
+.partners a img {
+  max-height: 200px;
+  aspect-ratio: 1/1;
 }
 
 #place {
@@ -371,14 +373,17 @@ footer h2 {
 /*                          Artist Caroussel (maxime)                         */
 /* -------------------------------------------------------------------------- */
 .artists-caroussel {
-  height: 100vh;
-  height: 100dvh;
+  height: 90vh;
+  height: 90dvh;
   display: flex;
   flex-direction: column;
   margin: 60px;
   margin-bottom: 120px;
 }
-.artists-caroussel .content {
+.artists-caroussel .hidden {
+  display: none;
+}
+.artists-caroussel .content.active {
   display: grid;
   grid-template-areas: "title" "img" "social";
   align-items: center;
@@ -386,26 +391,26 @@ footer h2 {
   gap: 1vh;
   height: 100%;
 }
-.artists-caroussel .content .image {
+.artists-caroussel .content.active .image {
   grid-area: img;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
-.artists-caroussel .content .image img {
+.artists-caroussel .content.active .image img {
   transform: rotate(-8deg);
   transition: transform 200ms;
   max-height: 60vh;
   filter: drop-shadow(5px 5px 3px #000000);
 }
-.artists-caroussel .content .image img:hover {
+.artists-caroussel .content.active .image img:hover {
   transform: rotate(-10deg) scale(1.05);
 }
-.artists-caroussel .content h2 {
+.artists-caroussel .content.active h2 {
   text-align: center;
   grid-area: title;
 }
-.artists-caroussel .content p {
+.artists-caroussel .content.active p {
   max-width: 28em;
   display: none;
   text-align: center;
@@ -413,13 +418,12 @@ footer h2 {
   line-height: 1.6;
   grid-area: text;
 }
-.artists-caroussel .content .social-nav {
+.artists-caroussel .content.active .social-nav {
   grid-area: social;
   align-self: start;
   font-size: 1.3rem;
 }
 .artists-caroussel .nav {
-  margin-top: 1em;
   font-size: 3vh;
   text-align: center;
   padding-bottom: 1em;
@@ -496,18 +500,18 @@ footer h2 {
   .artists-caroussel {
     height: 85vh;
   }
-  .artists-caroussel .content {
+  .artists-caroussel .content.active {
     grid-template-columns: 5fr 4fr;
     grid-template-areas: "img title" "img text" "img social";
     gap: 5%;
   }
-  .artists-caroussel .content p {
+  .artists-caroussel .content.active p {
     display: block;
   }
-  .artists-caroussel .content .social-nav {
+  .artists-caroussel .content.active .social-nav {
     margin-top: -5%;
   }
-  .artists-caroussel .content img {
+  .artists-caroussel .content.active img {
     max-height: 80vh;
   }
   .navigation {
