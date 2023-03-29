@@ -8,7 +8,7 @@ The Web Development students utilized cutting-edge technologies and coding pract
 
 ## Demo
 
-https://thboehi.github.io/neptunia/
+[Click here to try the website !](https://thboehi.github.io/neptunia/)
 
 ## Credits
 - Chadi Chammout
