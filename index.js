@@ -67,7 +67,7 @@ const artistSlides = [
         img: "img/artists-slider/herrkrank.png",
         title: "Herr Krank",
         text: 'Producer originally from Normandy and now based in Paris, label manager of Helios Records, Herr Krank quickly emerged among the names to follow of a new French wave of electronic music artists. Jazzy piano riffs, groovy basslines, percussive rhythmics and acid sounds are the recipe that have notably helped to panic the counters on his million-view track "Acid Jazz". But also on his 1st EP "So What" with the name paying homage to one of his strong influences, John Coltrane.',
-        soundCloud: "https://soundcloud.com"
+        soundCloud: "https://soundcloud.com/krank0001"
     },
     {
         img: "img/artists-slider/theos.png",
@@ -79,13 +79,13 @@ const artistSlides = [
         img: "img/artists-slider/drnovelove.png",
         title: "Dr. Novelove",
         text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae, labore quisquam? Dolorem ipsam soluta voluptatem reiciendis animi quisquam error perspiciatis veniam, dignissimos delectus minima quia voluptates saepe eos maxime repellat?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae, labore quisquam? Dolorem ipsam soluta voluptatem reiciendis animi quisquam error perspiciatis veniam, dignissimos delectus minima quia voluptates saepe eos maxime repellat?",
-        soundCloud: "https://soundcloud.com"
+        soundCloud: "https://soundcloud.com/quentin-novello/reposts"
     },
     {
         img: "img/artists-slider/midivido.png",
         title: "Midi & Vido",
         text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae, labore quisquam? Dolorem ipsam soluta voluptatem reiciendis animi quisquam error perspiciatis veniam, dignissimos delectus minima quia voluptates saepe eos maxime repellat?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae, labore quisquam? Dolorem ipsam soluta voluptatem reiciendis animi quisquam error perspiciatis veniam, dignissimos delectus minima quia voluptates saepe eos maxime repellat?",
-        soundCloud: "https://soundcloud.com"
+        soundCloud: "https://soundcloud.com/clubkatel"
     },
     {
         img: "img/artists-slider/cesar.png",
