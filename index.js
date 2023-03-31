@@ -104,31 +104,31 @@ const artistSlides = [
     {
         img: "img/artists-slider/herrkrank.png",
         title: "Herr Krank",
-        text: 'Producer originally from Normandy and now based in Paris, label manager of Helios Records, Herr Krank quickly emerged among the names to follow of a new French wave of electronic music artists. Jazzy piano riffs, groovy basslines, percussive rhythmics and acid sounds are the recipe that have notably helped to panic the counters on his million-view track "Acid Jazz". But also on his 1st EP "So What" with the name paying homage to one of his strong influences, John Coltrane.',
+        text: 'Herr Krank a rapidement émergé parmi les noms à suivre d’une nouvelle vague française d’artistes de musique électronique.<br>Sur scène et derrière ses machines, le producteur propose un live progressif grâce à un répertoire de productions bien remplies et variées.<br>Après avoir jalonné la scènes des meilleurs clubs de la capitale et de la France, Herr Krank continue de ravir son public aidés par des productions neuves et de nouvelles collaborations bientôt dévoilées.',
         soundCloud: "https://soundcloud.com/krank0001"
     },
     {
         img: "img/artists-slider/theos.png",
         title: "Theos",
-        text: "Nous n'avons pas encore toutes les informations concernant Theos, cet artiste mystérieux. Restez attentif et découvrez qui il est très prochainement !",
+        text: "Immergé dès son plus jeune dans la scène musicale grâce à deux parents musiciens, Théo débute comme dj, producteur et Musicien en 2019 sous le pseudonyme Theos. Il s'installe alors à Londres et étudie parallèlement l'ingénierie du son, se concentrant entièrement à sa musique. Ses productions s'inspirent de divers styles musicaux qui ont marqué son enfance, comme le hip-hop, le jazz et la funk pour délivrer une house music fraîche.",
         soundCloud: "https://soundcloud.com/theostheos"
     },
     {
         img: "img/artists-slider/drnovelove.png",
         title: "Dr. Novelove",
-        text: "Nous n'avons pas encore toutes les informations concernant Dr. Novelove, cet artiste mystérieux. Restez attentif et découvrez qui il est très prochainement !",
+        text: "Dr. Novelove est un DJ et producteur originaire de Paris et installé à Genève. Doté d’un grand talent artistique, il arrive à transporter son public dans un univers unique. Sa passion pour la musique électronique se reflète dans sa collection de tracks soigneusement sélectionnées, où il mélange des sons  house, progressive house, Trance, et d’autres genres pour créer une expérience musicale groovy et funky.<br>Avec un univers distinct, il saura faire danser le public et marquer l’esprit de ces derniers.",
         soundCloud: "https://soundcloud.com/quentin-novello/reposts"
     },
     {
         img: "img/artists-slider/midivido.png",
         title: "Midi & Vido",
-        text: "Nous n'avons pas encore toutes les informations concernant Midi & Vido, ce groupe mystérieux. Restez attentif et découvrez qui il est très prochainement !",
+        text: "Tous deux membres du collectif Nyonnais Club Katel, Midi & Vido fusionnent leur univers respectifs en joignant différentes formes de productions, toutes englobées sous les vastes termes de la house et de la disco.<br>Ayant foulés quelques scènes lémaniques comme celles des Hivernales, de Paléo Festival, Caribana ou encore du Jval, le duo est prêt à propager sa musique comme une traînée de poudre.",
         soundCloud: "https://soundcloud.com/clubkatel"
     },
     {
         img: "img/artists-slider/cesar.png",
         title: "César Alïli",
-        text: "Nous n'avons pas encore toutes les informations concernant César Alïli, cet artiste mystérieux. Restez attentif et découvrez qui il est très prochainement !",
+        text: "Ingénieur du son, DJ et producteur, Calixte Bruet aka César Aïli travaille le son sans relâche à la poursuite d'un objectif : rendre le club fou !<br>César Aïli propose dans ses sets, un choix de musiques électroniques soigneusement digguées dans le but de proposer à son audience un contenu dansant et original. Ses playlists contiennent autant de morceaux contemporains que de bangers oubliés des années 1990, dans des styles allant de la house au breakbeat en passant par des sonorités tant minimalistes que festives.",
         soundCloud: "https://soundcloud.com"
     },
 ];
