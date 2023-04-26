@@ -410,6 +410,7 @@ footer h2{
 .partners {
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
     align-items: center;
     max-width: 1000px;
     margin: 0 auto 60px auto;
@@ -425,10 +426,6 @@ footer h2{
 .partners a img{
     max-height: 200px;
     aspect-ratio: 1/1;
-}
-
-#place{
-    width:75%;
 }
 
 .media{
@@ -465,7 +462,7 @@ footer h2{
 /* -------------------------------------------------------------------------- */
 .artists-caroussel {
     height: 90vh; // fallback
-    height: 90dvh; // better for mobile when supported (merci jtm maxime)
+    height: 90dvh; // better for mobile when supported
     // background-color: aqua;
     display: flex;
     flex-direction: column;
@@ -557,6 +554,13 @@ footer h2{
         width: max-content;
         margin: 1em 0 0 0;
         font-weight: 400;
+        a{
+            transition: transform 300ms ease-in-out, font-weight 300ms ease-in-out;
+        }
+        a:hover{
+            transform: scale(0.95);
+            font-weight: 600;
+        }
         > * {
             margin: 0.5em 0;
             height: 1em;
@@ -685,12 +689,11 @@ footer h2{
         font-size: 1rem;
     }
     
-    .partners img{
-        width:75%;
-    }
-
-    #place{
-        width: 60%;
+    .partners{
+        flex-direction: row;
+        img{
+            width: 75%;
+        }
     }
     
     .media i{
